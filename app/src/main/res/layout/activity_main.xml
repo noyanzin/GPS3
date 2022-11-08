@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnGetLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOCATION"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        app:layout_constraintTop_toTopOf="@+id/btnGetLocation" />
+    <TextView
+    android:id="@+id/textLongatude"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Longatude"
+    app:layout_constraintTop_toTopOf="@+id/textLatitude" />
+    <TextView
+        android:id="@+id/textSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speed"
+        app:layout_constraintTop_toTopOf="@+id/textLongatude" />
+
+
+</LinearLayout>
